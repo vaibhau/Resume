@@ -1,0 +1,500 @@
+<head>
+  
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background: #cfcfcf;
+    font-size: 14px;
+    line-height: 22px;
+    color: #0c0c0c;
+    width: 100%;
+}
+
+.container{
+    width: 800px;
+    height: 1100px;
+    display: flex;
+    margin: 50px auto;
+    background: #fff;
+}
+
+.left_col{
+    width: 280px;
+    height: 1100px;
+    background: #000000;
+}
+
+.left_col_1{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #327D9D;
+}
+
+.left_col_2{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: #225565;
+}
+
+.left_col_3{
+    position: relative;
+    width: 100%;
+    height: 426px;
+    background: #225565;
+    padding: 25px 0;
+}
+
+img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 25px;
+    left: 35px;
+    border-radius: 50%;
+}
+
+.br{
+    width: 100%;
+    height: 42px;
+    background: #A99265;
+}
+
+.header{
+    position: absolute;
+    color: whitesmoke;
+    top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.header2{
+    left: 95px;
+}
+
+.header3{
+    left: 110px;
+}
+
+.header4{
+    left: 30px;
+    color: #225565;
+}
+
+.header5{
+  left: 30px;
+  color: #225565;
+}
+
+.header6{
+  left: 60px;
+  color: #225565;
+  font-size: 12px;
+}
+
+.below{
+  top: 40px;
+  left: 60px;
+  color: #225565;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.name{
+    position: absolute;
+    color: whitesmoke;
+    top: 240px;
+    left: 50px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.date{
+    position: absolute;
+    top: 265px;
+    left: 80px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #225565;
+}
+
+.address{
+    position: absolute;
+    color: #B9B9B9;
+    top: 60px;
+    left: 60px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.address a{
+  background-color: #327D9D;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.address a:hover{
+  background-color: #3E9403;
+  color: #fff;
+}
+
+
+.container .left_col .left_col_3 ul li{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.skill{
+    margin-bottom: 40px;
+}
+
+.progress_bar {
+    width: 75%;
+    left: 30px;
+    margin: 0 5px;
+    height: 25px;
+    background: #ffffff;
+    position: relative;
+}
+
+span{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 75%;
+    background: #327D9D;
+    font-size: 10px;
+}
+
+.align{
+    position: absolute;
+    left: 10px;
+    color: white;
+}
+
+.right_col{
+  width: 520px;
+  height: 1100px;
+  background: #A99265;
+}
+
+.right_col_1{
+  position: relative;
+  width: 100%;
+  height: 270px;
+  background: #F0F0F0;
+}
+
+.right_col_2{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  top: 10px;
+  background: #F0F0F0;  
+}
+
+.right_col_3{
+  position: relative;
+  width: 100%;
+  height: 280px;
+  top: 20px;
+  background: #F0F0F0;  
+}
+
+.right_col_4{
+  position: relative;
+  width: 100%;
+  height: 170px;
+  top: 30px;
+  background: #F0F0F0;  
+}
+
+.profile{
+  position: absolute;
+  color: #757575;
+  left: 30px;
+  font-size: 12px;
+  padding-right: 30px;
+  text-indent: 30px;
+}
+
+.profile1{
+  top: 60px;
+}
+
+.profile2{
+  top: 200px;
+}
+
+.right_col_left1{
+  position: absolute;
+  top: 60px;
+  width: 35%;
+  height: 280px;
+  background: #F0F0F0; 
+}
+
+.right_col_right1{
+  position: absolute;
+  top: 60px;
+  left: 183px;
+  width: 65%;
+  height: 280px;
+  background: #F0F0F0; 
+}
+
+.right_col_left2{
+  position: absolute;
+  top: 60px;
+  width: 20%;
+  height: 200px;
+  background: #F0F0F0; 
+}
+
+.right_col_right2{
+  position: absolute;
+  top: 60px;
+  left: 105px;
+  width: 80%;
+  height: 200px;
+  background: #F0F0F0; 
+}
+
+.side{
+  position: absolute;
+  color: #757575;
+  top: 20px;
+  left: 60px;
+  font-size: 12px;
+}
+
+.recent{
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  background: #F0F0F0; 
+}
+  </style>
+</head>
+<div class="container">
+        <!--left column starts-->
+        <div class="left_col">
+            <div class="left_col_1">
+                <img src="C:\Users\vaibh\Downloads\IMG_0928.jpg" alt="profile_picture">
+                <p class="name">Vaibhav Khandekar</p>
+                <p class="date">18 April, 2001</p>
+            </div>
+            <div class="br"></div>
+            <div class="left_col_2">
+                <p class="header header2">Contact</p>
+                <p class="address">Mumbai<br>
+                                   Maharashtra<br>
+                                   +7715901702<br><br>
+                                   vaibhavkhandekar@gmail.com<br><br>
+                  </p>
+            </div>
+            <div class="br"></div>
+            
+            <div class="left_col_3">
+           
+              <div class="skill">
+                <p class="header header3">Skills</p>
+              </div>
+              <ul>
+                <li>
+                  <div class="progress_bar">
+                    <span style="width: 97%;">
+                      <p class="align">PYTHON
+                      </p>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress_bar">
+                    <span style="width: 97%;">
+                      <p class="align">JAVA
+                      </p>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress_bar">
+                    <span style="width: 97%;">
+                      <p class="align">DATA ANALYSIS WITH EXCEL
+                      </p>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress_bar">
+                    <span style="width: 97%;">
+                      <p class="align">PHP
+                      </p>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress_bar">
+                    <span style="width: 97%;">
+                      <p class="align">MYSQL
+                      </p>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress_bar">
+                    <span style="width: 97%;">
+                      <p class="align">WORDPRESS
+                      </p>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress_bar">
+                    <span style="width: 97%;">
+                      <p class="align">UI/UX
+                      </p>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress_bar">
+                    <span style="width: 97%;">
+                      <p class="align">GIT-GITHUB
+                      </p>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress_bar">
+                    <span style="width: 97%;">
+                      <p class="align">HTML
+                      </p>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress_bar">
+                    <span style="width: 97%;">
+                      <p class="align">JAVASCRIPT
+                      </p>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress_bar">
+                    <span style="width: 97%;">
+                      <p class="align">JQUERY
+                      </p>
+                    </span>
+                  </div>
+                </li>
+              </ul>              
+            </div>
+          </div>
+    
+          <!--right column starts-->
+          <div class="right_col">
+            <div class="right_col_1">
+              <p class="header header4">PROFILE
+              </p>
+              <p class="profile profile1">As an Information Technology student, I am passionate about all aspects of technology and dedicated to learning everything I can about the field. With a strong foundation in programming, database management, networking, and cybersecurity, I am equipped with the skills to tackle complex technical challenges and create innovative solutions.I am eager to apply my knowledge and skills to real-world problems, and always looking for opportunities to gain hands-on experience through internships, hackathons, and personal projects. I am committed to staying up-to-date with the latest technologies and industry trends, and constantly seeking out new ways to expand my knowledge and expertise.
+              </p>
+              <p class="profile profile2">
+              </p>
+            </div>
+            <div class="right_col_2">
+              <p class="header header5">EDUCATION
+              </p>
+              <div class="right_col_left1">
+                <p class="header header6">PG - Diploma
+                </p>
+                <p class="header below">Mar 2023 - Current
+                </p>
+                <p class="header header6" style="top: 110px;">B.E.
+                </p>
+                <p class="header below" style="top: 130px;">2019 - 2022
+                </p>
+                <p class="header header6" style="top: 202px;">Diploma
+                </p>
+                <p class="header below" style="top: 220px;">2016 - 2019
+                </p>
+              </div>
+              <div class="right_col_right1">
+                <p class="side" >CDAC, Mumbai
+                  <br>
+                  PG - DBDA
+                  <br>
+                  Mumbai, Maharashtra
+                </p>
+                <p class="side" style="top: 106px;">
+                  Savitribai Phule Pune University
+                  <br>
+                  Information Technology
+                  <br>
+                  Pune, Maharashtra
+                </p>
+                <p class="side" style="top: 198px;">
+                  Government Polytechnic, Mumbai
+                  <br>
+                  Information Technology
+                  <br>
+                  Mumbai, Maharashtra
+                </p>
+              </div>
+            </div>
+            <div class="right_col_3">
+              <p class="header header5">Personal Projects
+              </p>
+              <div class="right_col_left2">
+                <p class="header header6">2019
+                </p>
+                <p class="header header6" style="top: 50px;">2022
+                </p>
+                <p class="header header6" style="top: 80px;">
+                </p>
+                <p class="header header6" style="top: 110px;">
+                </p>
+                <p class="header header6" style="top: 140px;">
+                </p>
+              </div>
+              <div class="right_col_right2">
+                <p class="side">MIS - Management of Information System
+                </p>
+                <p class="side" style="top: 50px;">Eye Gaze System
+                </p>      
+                <p class="side" style="top: 80px;">
+                </p>
+                <p class="side" style="top: 110px;">
+                </p>         
+                <p class="side" style="top: 140px; padding-right: 30px;"><br>
+                </p>
+              </div>
+            </div>
+            <div class="right_col_4">
+              <p class="header header5">RECENT
+              </p>
+              <div class="recent">
+                <p class="side">Pursuing PG-DBDA at CDAC Mumbai.
+                </p>
+                <p class="side" style="top: 50px;">
+                </p>
+                <p class="side" style="top: 50px; left: 260px;">
+                </p>
+              </div>
+            </div>
+          </div>
+    </div> 
